@@ -79,10 +79,10 @@ M.python = {
 	},
 }
 
-M.codelldb = {
+M.lldb = {
 	{
 		name = 'LLDB: Launch',
-		type = 'codelldb',
+		type = 'lldb',
 		request = 'launch',
 		program = function()
 			return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
@@ -94,7 +94,7 @@ M.codelldb = {
 	},
 	{
 		name = 'LLDB: Launch (args)',
-		type = 'codelldb',
+		type = 'lldb',
 		request = 'launch',
 		program = function()
 			return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
